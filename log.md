@@ -41,3 +41,21 @@ https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/regular
 https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/regular-expressions/match-single-characters-not-specified
 https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/regular-expressions/match-characters-that-occur-one-or-more-times
 
+Day 4 April 04, 2019
+** Today's Progress** Trying to finish the Regular Expressions lessons
+-Match characters that occur zero or more times
+-Find one or more criminals in a hunt
+I just realised that the links to work when clicked does not generate the solution that I worked for my test so I wonder what to do?I am trying to paste the work here with solution:
+// example crowd gathering
+let crowd = 'P1P2P3P4P5P6CCCP7P8P9';
+
+let reCriminals = /C+/; // Changed
+
+let matchedCriminals = crowd.match(reCriminals);
+console.log(matchedCriminals);
+
+-Find characters with lazy matching
+-
+**Links to work**
+https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/regular-expressions/match-characters-that-occur-zero-or-more-times
+https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/regular-expressions/find-characters-with-lazy-matching
