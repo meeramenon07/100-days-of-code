@@ -60,7 +60,7 @@ console.log(matchedCriminals);
 https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/regular-expressions/match-characters-that-occur-zero-or-more-times
 https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/regular-expressions/find-characters-with-lazy-matching
 
-Day 5 April, 2019
+Day 5 April 05, 2019
 -Regular Expressions: Match beginning String Patterns
 -Regular Expressions : Match ending string patterns
 -Regular Expressions : Match all letters and numbers
@@ -74,4 +74,34 @@ Day 5 April, 2019
 [Regex Match everything but letters and numbers](https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/regular-expressions/match-everything-but-letters-and-numbers)
 [Regular Expressions match all numbers](https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/regular-expressions/match-all-numbers)
 [Regular Expressions match all non-numbers](https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/regular-expressions/match-all-non-numbers)
+
+Day 6 : April 06, 2019
+**Today's progress : Continuing with the Regex chapters
+-Restrict Possible Usernames : Challenge :
+Very challenging and interest challenge this one
+You need to check all the usernames in a database. Here are some simple rules that users have to follow when creating their username.
+
+1) The only numbers in the username have to be at the end. There can be zero or more of them at the end.
+
+2) Username letters can be lowercase and uppercase.
+
+3) Usernames have to be at least two characters long. A two-letter username can only use alphabet letter characters.
+
+let username = "JackOfAllTrades";
+let userCheck = /^[a-z]{2,}\d*$/i;//after changing the line here
+let result = userCheck.test(username);
+
+-Regex : Match white space
+The shorthand used for matching white space is \s
+This shorthand can also match characters \r\t\f\n\v
+(return,tab, form feed, and new line characters)
+Time for challenge : 
+Change the regex countWhiteSpace to look for multiple whitespace characters in a string.
+let sample = "Whitespace is important in separating words";
+let countWhiteSpace = /\s/g;//changed the line
+let result = sample.match(countWhiteSpace);
+
+-Regex : Match non white space
+The shorthand for this is \S
+
 
