@@ -95,7 +95,7 @@ let result = userCheck.test(username);
 The shorthand used for matching white space is \s
 This shorthand can also match characters \r\t\f\n\v
 (return,tab, form feed, and new line characters)
-Time for challenge : 
+Time for challenge :
 Change the regex countWhiteSpace to look for multiple whitespace characters in a string.
 let sample = "Whitespace is important in separating words";
 let countWhiteSpace = /\s/g;//changed the line
@@ -104,4 +104,29 @@ let result = sample.match(countWhiteSpace);
 -Regex : Match non white space
 The shorthand for this is \S
 
+Day 7 : April 07, 2019
+**Today's progress : Continuing with regex chapters
+-Specify upper and lower number of matches
+**Work test**
+let let ohStr = "Ohhh no";
+let ohRegex = /oh{3,6}\sno/i; // Changed
+let result = ohRegex.test(ohStr);
+The challenge was : Change the regex ohRegex to match only 3 to 6 letter h's in the word "Oh no" 
+\s will match the white space and flag i will match the cases
 
+-Specify only the lower number of matches
+The challenge is to Change the regex haRegex to match the word "Hazzah" only when it has four or more letter z's.
+in the following
+let haStr = "Hazzzzah";
+let haRegex = / // Change this line
+let result = haRegex.test(haStr);
+
+My work solution 
+let haStr = "Hazzzzah";
+let haRegex = /haz{4,}ah/i // 
+let result = haRegex.test(haStr);
+
+flag i is for the cases
+
+
+-
