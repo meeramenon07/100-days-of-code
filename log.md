@@ -129,4 +129,34 @@ let result = haRegex.test(haStr);
 flag i is for the cases
 
 
+***Day 8 : April 08 2019
+** Today's Progress: About to finish the chapter on Regex
+
+-Regex: Specify exact number of matches
+Time for some Work challenge: Change the regex timRegex to match the word "Timber" only when it has four letter m's.
+in the following :
+let timStr = "Timmmmber";
+let timRegex = /       /; // Change this line
+let result = timRegex.test(timStr);
+
+Solution after changing the above line:
+let timStr = "Timmmmber";
+let timRegex = /tim{4}ber/i; //changed line
+let result = timRegex.test(timStr);
+
+-Regex: Check for all or none
+Time for challenge work;
+let favWord = "favorite";
+let favRegex = /     /; // Change this line
+let result = favRegex.test(favWord);
+
+Here is my solution-
+
+let favWord = "favorite";
+let favRegex - /favou?rite/; // changed
+let result = favRegex.test(favWord);
+
+
+
+
 -
