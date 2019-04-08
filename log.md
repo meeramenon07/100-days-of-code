@@ -129,7 +129,7 @@ let result = haRegex.test(haStr);
 flag i is for the cases
 
 
-***Day 8 : April 08 2019
+Day 8 : April 08 2019
 ** Today's Progress: About to finish the chapter on Regex
 
 -Regex: Specify exact number of matches
