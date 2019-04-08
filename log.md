@@ -156,6 +156,25 @@ let favWord = "favorite";
 let favRegex - /favou?rite/; // changed
 let result = favRegex.test(favWord);
 
+-Regex- Positive and Negative Lookahead
+Positive Lookahead uses the sign (?=...) and negative lookahead uses sign (?!...)
+I want to write this example provided in the chapter to remember the rules and codes
+Example is that of a simple password checker that looks for between 3 and 6 characters and atleast one number:
+let password = "abc123";
+let checkPass = /(?=\w{3,6})(?=\D*\d)/;
+checkPass.test(password);// returns true
+
+Time for some work challenge in the chapter
+Use lookaheads in the pwRegex to match passwords that are greater than 5 characters long and have two consecutive digits.
+
+let sampleWord = "astronaut";
+let pwRegex = /(?= \W {5,}) (?= \D*\d{2})/;
+let result = pwRegex.test(sampleWord);
+The first lookahead looks for characters greater than 5 where the shorthand \w will look for characters that will match all letters and numbers. The second lookahead will look for digits and non number characters. The number 2 in the string depects characters with two digits.The shorthand \D is for non numbers, \d for digits and * is for zero or more characters.
+
+
+
+
 
 
 
