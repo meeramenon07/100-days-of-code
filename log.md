@@ -174,8 +174,42 @@ The first lookahead looks for characters greater than 5 where the shorthand \w w
 
 
 
+Day 9 April 09 2019
+
+*** Today's Progress: Concluding the Regex chapter
+Regex: Reuse Patterns using Capture Groups
+Using parenthesis() to find repeat sub strings and backslash \ followed by a number to state where that repeat group will appear.
+example
+let repeatStr = "regex regex";
+let repeatRegex = /(\w+)\s\1/;
+repeatRegex.test(repeatStr); // Returns true
+repeatStr.match(repeatRegex); // Returns ["regex regex", "regex"]
+
+Time for a tough challenge( this was tough for me to figure out but thanks to a fellow code camper's reply from last year, I was able to figure it out so clearly) Here is the problem with the clear solution with explanation:
+
+Use capture groups in reRegex to match numbers that are repeated only three times in a string, each separated by a space.
+
+let repeatNum = "42 42 42";
+let reRegex = /        /  //;change this line
+let result = reRegex.test(repeatNum);
+
+solution :
+let repeatNum = "42 42 42";
+let reRegex = /^(d+)\s\1\s\1$ /;
+Explanation :
+^ start
+(\d+) the first number
+\s a space
+\1 the next number
+\s a space
+\1 the final number
+$ the end of the string
+So we match the original number with (\d+), and then we match it a further two times using \1. In total, that makes us look for three matches of that number, with spaces \s between each of them. 
+
+
+-Regex- Use capture groups to search and replace
+using replace() 
+.replace(search parameter, "string to be replaced ")
 
 
 
-
--
