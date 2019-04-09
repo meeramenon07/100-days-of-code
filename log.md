@@ -210,6 +210,17 @@ So we match the original number with (\d+), and then we match it a further two t
 -Regex- Use capture groups to search and replace
 using replace() 
 .replace(search parameter, "string to be replaced ")
+let wrongText = "The sky is silver.";
+let silverRegex = /silver/;
+wrongText.replace(silverRegex, "blue");
+// Returns "The sky is blue."
+You can also access capture groups in the replacement string with dollar signs ($).
 
+"Code Camp".replace(/(\w+)\s(\w+)/, '$2 $1');
+// Returns "Camp Code"
+let huhText = "This sandwich is good.";
+let fixRegex = /good/; // Change this line
+let replaceText = "okey-dokey"; // Change this line
+let result = huhText.replace(fixRegex, replaceText);
 
 
