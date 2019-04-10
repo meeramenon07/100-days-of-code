@@ -224,3 +224,6 @@ let replaceText = "okey-dokey"; // Change this line
 let result = huhText.replace(fixRegex, replaceText);
 
 
+Day 10, April 10, 2019
+Regex- Remove white space at the beginning and end
+I am stuck here and cannot fully pass the challenge,so, going to refer to my notes again before going to come back to this chapter again tomorrow.
