@@ -227,3 +227,27 @@ let result = huhText.replace(fixRegex, replaceText);
 Day 10, April 10, 2019
 Regex- Remove white space at the beginning and end
 I am stuck here and cannot fully pass the challenge,so, going to refer to my notes again before going to come back to this chapter again tomorrow.
+
+
+Day 11, April 11, 2019
+*** Today's Progress : Managed to pass my last chapter on Regex finally
+
+Regex: Remove space from beginning and end of a string
+
+let hello = "   Hello, World!  ";
+let wsRegex = /    /; // Change this line
+let result = hello; // Change this line
+
+let hello = "   Hello, World!  ";
+let wsRegex = /^\s*|\s*$/g; // Changed
+let result = hello.replace(wsRegex, ""); // Changed
+
+Very challenging indeed this one.
+^\s  white space in the beginning
+* some  non digit characters
+| or operand
+\s*$ white space and non digit character at the end
+g is the global flag
+so the result will be "Hello, World!" due the changed codes above as shown, with only one space remaining in between the two words and removing the occurences of white spaces in the beginning and end of the string.
+
+
