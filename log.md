@@ -251,3 +251,7 @@ g is the global flag
 so the result will be "Hello, World!" due the changed codes above as shown, with only one space remaining in between the two words and removing the occurences of white spaces in the beginning and end of the string.
 
 
+Day 12. April 12, 2019
+*** Today's progress : Instead of going forward with the next chapter set, I decided to do revision of the past few weeks' chapters on basic java scrript, es6 and regex so that i can remember the codes better
+Today- I finished revision of basic java script from my hand written notes
+
