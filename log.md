@@ -255,3 +255,5 @@ Day 12. April 12, 2019
 *** Today's progress : Instead of going forward with the next chapter set, I decided to do revision of the past few weeks' chapters on basic java scrript, es6 and regex so that i can remember the codes better
 Today- I finished revision of basic java script from my hand written notes
 
+Day 13, April 13, 2019
+*** Today's progress : I did my second day of revising ES and Regex
