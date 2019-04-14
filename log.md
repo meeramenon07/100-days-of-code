@@ -257,3 +257,10 @@ Today- I finished revision of basic java script from my hand written notes
 
 Day 13, April 13, 2019
 *** Today's progress : I did my second day of revising ES and Regex
+
+Day 14, April 14, 2019
+***  Today's progress: 
+I was reading up on css animation and implemented that on a website that i was practising on. I was trying to rotate my main image but ended up geting image shaking effect despite of my css code for rotate. Trying to figure out what went wrong. Will be working on it unless I figure it out myself or from some help.
+Link to work : https://codepen.io/meeramenon07/full/qwaWeP
+
+
