@@ -264,3 +264,7 @@ I was reading up on css animation and implemented that on a website that i was p
 Link to work : https://codepen.io/meeramenon07/full/qwaWeP
 
 
+Day 15, April 15, 2019
+***  Today's progress:
+Watched the video on Java script for beginners by teacher Beau - a free video from freeCodeCamp so that I can take a step back to remember the chapter on js I will watch it for two days to understand my codes even better and it is a fantastic video on java script.
+Link to video :https://www.freecodecamp.org/news/learn-javascript-full-course/
