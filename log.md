@@ -268,3 +268,7 @@ Day 15, April 15, 2019
 ***  Today's progress:
 Watched the video on Java script for beginners by teacher Beau - a free video from freeCodeCamp so that I can take a step back to remember the chapter on js I will watch it for two days to understand my codes even better and it is a fantastic video on java script.
 Link to video :https://www.freecodecamp.org/news/learn-javascript-full-course/
+
+
+Day 16, April 16, 2019
+*** Today's progress: Continued watching the java script video by teacher Beau. Its the most amazing tutorial video that I have watched and learned from. Today, I learnt and revised about calling functions, function arguments, returning functions both valid and invalild, Boolean values, Conditional logic with If statements, Global versus Local scope in functions, storing array, Logical and operator, Equality and Inequality operator, etc.
