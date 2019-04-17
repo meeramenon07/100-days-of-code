@@ -253,7 +253,8 @@ so the result will be "Hello, World!" due the changed codes above as shown, with
 
 Day 12. April 12, 2019
 *** Today's progress : Instead of going forward with the next chapter set, I decided to do revision of the past few weeks' chapters on basic java scrript, es6 and regex so that i can remember the codes better
-Today- I finished revision of basic java script from my hand written notes
+Today- I finished revision of basic java scr
+ipt from my hand written notes
 
 Day 13, April 13, 2019
 *** Today's progress : I did my second day of revising ES and Regex
@@ -272,3 +273,22 @@ Link to video :https://www.freecodecamp.org/news/learn-javascript-full-course/
 
 Day 16, April 16, 2019
 *** Today's progress: Continued watching the java script video by teacher Beau. Its the most amazing tutorial video that I have watched and learned from. Today, I learnt and revised about calling functions, function arguments, returning functions both valid and invalild, Boolean values, Conditional logic with If statements, Global versus Local scope in functions, storing array, Logical and operator, Equality and Inequality operator, etc.
+
+
+
+Day 17, April 17, 2019
+*** Today's progress : Continued watching the java script video by teacher Beau for revision. Today, I covered the following topics :
+Returning Boolean values from functions
+Returning early patterns from functions
+Function And operator
+Function OR operator
+Else statements
+Else If Statements
+Logical order in Else If Statements
+If Else chain 
+Switch statements
+Default options in switch statments
+Gold code
+Multiple identital options in switch statements
+Replacing If Else chains with Switch
+Replacing If Else chains with Switch statements
