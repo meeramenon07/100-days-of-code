@@ -292,3 +292,19 @@ Gold code
 Multiple identital options in switch statements
 Replacing If Else chains with Switch
 Replacing If Else chains with Switch statements
+
+
+
+Day 18, April 18, 2019
+*** Today's progress: Continued watching the Javascript video by teacher Beau for my revision. I covered the following topics  today:
+Accessing Object Properties with dot notation
+Acessing Object properties with bracket notation
+Accessing Object properties with variables
+Updating Object properties
+Add New properties to an Object
+Delete properties from an Object
+Using Objects for Lookups
+Testing Objects for properties
+Manipulating complex Objects
+Accessing Nested Objects
+
