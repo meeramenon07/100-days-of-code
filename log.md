@@ -308,3 +308,11 @@ Testing Objects for properties
 Manipulating complex Objects
 Accessing Nested Objects
 
+
+
+
+Day 19, April 19, 2019
+
+*** Today's progress : Revision of Javascript
+Accessing nested arrays
+Accessing nested objects
