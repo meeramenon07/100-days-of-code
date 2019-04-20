@@ -316,3 +316,15 @@ Day 19, April 19, 2019
 *** Today's progress : Revision of Javascript
 Accessing nested arrays
 Accessing nested objects
+
+
+
+
+Day 20, April 20, 2019
+Today's progress : Revising my Javascript chapters through the video by teacher Beau
+Covered lessons were :
+Count backwards with a For Loop
+Iterate through an Array with a For loop
+Iterate through an array with a While loop
+Nesting For loops
+The above lessons were really heavy so I had to play the video many times to actually understand and solve the challenges myself but was very rewarding considering the fact that now I really understand it after watching this video, so, many thanks to teacher Beau as I understood more after these video lessons more in my second round of video revisions.
