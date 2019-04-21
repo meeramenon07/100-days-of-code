@@ -328,3 +328,20 @@ Iterate through an Array with a For loop
 Iterate through an array with a While loop
 Nesting For loops
 The above lessons were really heavy so I had to play the video many times to actually understand and solve the challenges myself but was very rewarding considering the fact that now I really understand it after watching this video, so, many thanks to teacher Beau as I understood more after these video lessons more in my second round of video revisions.
+
+
+
+
+
+Day 21, April 21, 2019
+Today's progress : Finished watching the video on Javascript by Beau, Part 1.
+Covered the following lessons today:
+Iterate with Do While Looops
+Profile Lookup
+Generate Random Fractions
+Generate Random Whole Numbers
+Generate Random Whole Numbers within a Range
+Use the parseInt Function
+Use the parseInt Function with a Radix
+Use the conditional Ternary Operator
+Use Multiple Conditional Ternary Operators
