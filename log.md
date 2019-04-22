@@ -345,3 +345,17 @@ Use the parseInt Function
 Use the parseInt Function with a Radix
 Use the conditional Ternary Operator
 Use Multiple Conditional Ternary Operators
+
+
+
+
+
+
+Day 22, April 22, 2019
+Today's progress : Started the video on Javascript by Beau, Part 2 on ES6
+Covered the following topics on ES6
+Explore the differences between var and let keyword
+Scope of var and let keywords
+Declare a Read-only variable with Const keyword
+Mutate an array declared with const
+Prevent object mutation declared with const
