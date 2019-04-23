@@ -359,3 +359,16 @@ Scope of var and let keywords
 Declare a Read-only variable with Const keyword
 Mutate an array declared with const
 Prevent object mutation declared with const
+
+
+
+
+
+Day 23, April 23, 2019
+Today's progress : Continue watching the video on JS by Beau, Part 2: ES6
+Covered the following topics on ES6:
+⌨️ (2:47:17) 114. Use Arrow Functions to Write Concise Anonymous Functions
+⌨️ (2:28:24) 115. Write Arrow Functions with Parameters
+⌨️ (2:49:27) 116. Write Higher Order Arrow Functions
+⌨️ (2:53:04) 117. Set Default Parameters for Your Functions
+⌨️ (2:54:00) 118. Use the Rest Operator with Function Parameters
