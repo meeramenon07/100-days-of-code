@@ -372,3 +372,16 @@ Covered the following topics on ES6:
 ⌨️ (2:49:27) 116. Write Higher Order Arrow Functions
 ⌨️ (2:53:04) 117. Set Default Parameters for Your Functions
 ⌨️ (2:54:00) 118. Use the Rest Operator with Function Parameters
+
+
+
+
+
+Day 24, April 24, 2019
+Today's progress : Continue watching the video on javascript by Beau, Part 2 : ES6
+Covered the following topics on ES6:
+⌨️ (2:55:31) 119. Use the Spread Operator to Evaluate Arrays In-Place
+⌨️ (2:57:18) 120. Use Destructuring Assignment to Assign Variables from Objects
+⌨️ (3:00:18) 121. Use Destructuring Assignment to Assign Variables from Nested Objects
+⌨️ (3:01:55) 122. Use Destructuring Assignment to Assign Variables from Arrays
+⌨️ (3:03:40) 123. Use Destructuring Assignment with the Rest Operator to Reassign Array
