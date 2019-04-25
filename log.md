@@ -385,3 +385,12 @@ Covered the following topics on ES6:
 ⌨️ (3:00:18) 121. Use Destructuring Assignment to Assign Variables from Nested Objects
 ⌨️ (3:01:55) 122. Use Destructuring Assignment to Assign Variables from Arrays
 ⌨️ (3:03:40) 123. Use Destructuring Assignment with the Rest Operator to Reassign Array
+
+
+
+
+
+Day 25, April 25, 2019
+Today's progress: watching the javascript video part 2 on ES6 covering the following topics today:
+⌨️ (3:05:05) 124. Use Destructuring Assignment to Pass an Object as a Function's
+⌨️ (3:06:39) 125. Create Strings using Template Literals
