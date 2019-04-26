@@ -394,3 +394,14 @@ Day 25, April 25, 2019
 Today's progress: watching the javascript video part 2 on ES6 covering the following topics today:
 ⌨️ (3:05:05) 124. Use Destructuring Assignment to Pass an Object as a Function's
 ⌨️ (3:06:39) 125. Create Strings using Template Literals
+
+
+
+****************************************************************
+Day 26, April 26, 2019
+Today's progress : Continued watching the video on javascript by Beau, Part 2 : ES6
+Covered the following topics:
+126. Write Concise Object Literal Declarations Using Simple Fields
+⌨️ (3:12:24) 127. Write Concise Declarative Functions with ES6
+⌨️ (3:12:56) 128. Use class Syntax to Define a Constructor Function
+⌨️ (3:15:11) 129. Use getters and setters to Control Access to an Object
