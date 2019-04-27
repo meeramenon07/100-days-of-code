@@ -405,3 +405,16 @@ Covered the following topics:
 ⌨️ (3:12:24) 127. Write Concise Declarative Functions with ES6
 ⌨️ (3:12:56) 128. Use class Syntax to Define a Constructor Function
 ⌨️ (3:15:11) 129. Use getters and setters to Control Access to an Object
+
+
+
+
+************************************************************************
+Day 27, April 27, 2019
+Today's progress: Finished watching the video on Javascript for beginners part 1 and part 2
+Covered the following topics today while concluding the video:
+⌨️ (3:20:25) 130. Understand the Differences Between import and require
+⌨️ (3:22:33) 131. Use export to Reuse a Code Block
+⌨️ (3:23:40) 132. Use * to Import Everything from a File
+⌨️ (3:24:50) 133. Create an Export Fallback with export default
+⌨️ (3:25:26) 134. Import a Default Export
