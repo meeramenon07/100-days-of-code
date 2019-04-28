@@ -418,3 +418,20 @@ Covered the following topics today while concluding the video:
 ⌨️ (3:23:40) 132. Use * to Import Everything from a File
 ⌨️ (3:24:50) 133. Create an Export Fallback with export default
 ⌨️ (3:25:26) 134. Import a Default Export
+
+
+
+Day 28, April 28, 2019
+Today's progress: Introduction to debugging challenges in js
+covered the following topics today:
+Use the JavaScript Console to Check the Value of a Variable
+Pass
+Understanding the Differences between the freeCodeCamp and Browser Console
+Use typeof to Check the Type of a Variable
+Catch Misspelled Variable and Function Names
+Catch Unclosed Parentheses, Brackets, Braces and Quotes
+Catch Mixed Usage of Single and Double Quotes
+Catch Use of Assignment Operator Instead of Equality Operator
+Catch Missing Open and Closing Parenthesis After a Function Call
+Catch Arguments Passed in the Wrong Order When Calling a Function
+Catch Off By One Errors When Using Indexing
