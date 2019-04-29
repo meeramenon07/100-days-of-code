@@ -435,3 +435,19 @@ Catch Use of Assignment Operator Instead of Equality Operator
 Catch Missing Open and Closing Parenthesis After a Function Call
 Catch Arguments Passed in the Wrong Order When Calling a Function
 Catch Off By One Errors When Using Indexing
+
+
+
+Day 29, April 29, 2019
+Today's progress: Completed the debugging lessons and started the Basic Data Structure lessons
+Covered the following topics today:
+Use Caution When Reinitializing Variables Inside a Loop
+Prevent Infinite Loops with a Valid Terminal Condition
+Introduction to the Basic Data Structure Challenges
+Use an Array to Store a Collection of Data
+Access an Array's Contents Using Bracket Notation
+Add Items to an Array with push() and unshift()
+Remove Items from an Array with pop() and shift()
+Remove Items Using splice()
+
+
