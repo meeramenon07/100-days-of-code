@@ -451,3 +451,10 @@ Remove Items from an Array with pop() and shift()
 Remove Items Using splice()
 
 
+
+Day 30, April 30, 2019
+Today's progress : Doing the lessons onData structure 
+Covered the following topics today:
+Add Items Using splice()
+Copy Array Items Using slice()
+Copy an Array with the Spread Operator
