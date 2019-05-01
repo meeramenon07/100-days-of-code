@@ -458,3 +458,12 @@ Covered the following topics today:
 Add Items Using splice()
 Copy Array Items Using slice()
 Copy an Array with the Spread Operator
+
+
+
+
+Day 31, May 1, 2019
+Today's progress: Doing the lessons on data structure
+Covered the following topics today:
+Combine Arrays with the Spread Operator
+Check For The Presence of an Element With indexOf()
