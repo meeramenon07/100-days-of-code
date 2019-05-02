@@ -467,3 +467,12 @@ Today's progress: Doing the lessons on data structure
 Covered the following topics today:
 Combine Arrays with the Spread Operator
 Check For The Presence of an Element With indexOf()
+
+
+
+
+Day 32, May 2, 2019
+Today;s progress: Doing lessons on data structure
+Covered following topics today-
+Iterate Through All an Array's Items Using For Loops
+I got stuck at the next topic which I am planning to research well before proceeding with it, dont find this topic clearly explained anywhere ! it is 'create complex multi dimensional arrays'
