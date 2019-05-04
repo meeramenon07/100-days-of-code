@@ -486,3 +486,11 @@ Create complex multi-dimensional arrays
 Add Key-Value Pairs to JavaScript Objects
 Modify an Object Nested Within an Object
 Access Property Names with Bracket Notation
+
+
+
+Day 34, May 04, 2019
+Today's progress : Doing the lessons on data structure
+Covered following topics today:
+Use the delete Keyword to Remove Object Properties
+Check if an Object has a Prdataoperty
