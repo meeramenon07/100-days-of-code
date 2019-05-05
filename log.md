@@ -494,3 +494,10 @@ Today's progress : Doing the lessons on data structure
 Covered following topics today:
 Use the delete Keyword to Remove Object Properties
 Check if an Object has a Prdataoperty
+
+
+
+Day 35, May 05, 2019
+Today's progress- lessons on data structure
+Topics covered:
+ Iterate Through the Keys of an Object with a for...in Statement
