@@ -501,3 +501,11 @@ Day 35, May 05, 2019
 Today's progress- lessons on data structure
 Topics covered:
  Iterate Through the Keys of an Object with a for...in Statement
+
+
+
+Day 36, May 06, 2019
+Today's progress: lessons concluded on data structure
+Topics covered today:
+Generate an Array of All Object Keys with Object.keys()
+Modify an Array Stored in an Object
