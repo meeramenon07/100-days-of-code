@@ -509,3 +509,11 @@ Today's progress: lessons concluded on data structure
 Topics covered today:
 Generate an Array of All Object Keys with Object.keys()
 Modify an Array Stored in an Object
+
+
+
+Day 37, May 07, 2019
+Today's progress: lessons started on Basic Algorithm scripting
+Topics covered today :
+Convert Celsius to Fahrenheit
+Reverse a string
