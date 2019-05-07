@@ -517,3 +517,14 @@ Today's progress: lessons started on Basic Algorithm scripting
 Topics covered today :
 Convert Celsius to Fahrenheit
 Reverse a string
+Factorialize a Number
+The factorialize challenge is very challenging so noting down my solution here for my record:
+function factorialize(num) {
+  let factorializeNum = 1;
+  for (let i = 1; i < num; i--){
+   factorializeNum = (num * factorialize(num - 1)); 
+  }
+  return factorializeNum;
+}
+
+factorialize(5);
