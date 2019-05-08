@@ -546,5 +546,5 @@ function findLongestWord(str){
  }
  return longestWord;
 }
-find longestWord ("The quick brown fox jumped over the lazy dog");
+findLongestWord ("The quick brown fox jumped over the lazy dog");
  
