@@ -528,3 +528,23 @@ function factorialize(num) {
 }
 
 factorialize(5);
+
+
+
+Day 38, May 08, 2019
+Today's progress : Basic Algorithm scripting lesson
+Topic covered today:
+Find the longest word in a strong
+My solution using the split() method  and for loop iteration:
+function findLongestWord(str){
+ strSplit = str.split(' ');
+ var longestWord = 0;
+ for (var i = 0; i < strSplit.length; i++) {
+  if strSplit[i].length > longestWord{
+     longestWord = strSplit[i].length;
+  }
+ }
+ return longestWord;
+}
+find longestWord ("The quick brown fox jumped over the lazy dog");
+ 
