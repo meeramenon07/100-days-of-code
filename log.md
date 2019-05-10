@@ -548,3 +548,27 @@ function findLongestWord(str){
 }
 findLongestWord ("The quick brown fox jumped over the lazy dog");
  
+Day 39, May 09. 2015
+I skipped
+
+Day 40, May 10, 2019
+Today's progress: completed the challenge for finding the largest number in an array 
+My solution :
+`````````````````````````````````````````````````````````````````
+function largestOfFour(arr) {
+  // You can do this!
+  var result = [];
+  for (var i = 0; i < arr.length; i++){
+    var largestNumber  = arr[i][0];
+      for (var j = 1; j < arr[i].length; j++){
+        if (arr[i][j] > largestNumber){
+          largestNumber = arr[i][j];
+      }
+    }
+    result.push(largestNumber);
+  }
+
+
+  return result;
+}
+````````````````````````````````````````````````````````````````
