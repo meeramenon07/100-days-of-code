@@ -572,3 +572,8 @@ function largestOfFour(arr) {
   return result;
 }
 ````````````````````````````````````````````````````````````````
+Day 41, May 12 & Day 42 (May 11, 2019 - May 12, 2019)
+Today's progress (May 12, 2019):
+Finished the challenge for finding the ending 
+Basic algorithm scripting : find the ending 
+
