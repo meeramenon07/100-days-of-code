@@ -578,7 +578,7 @@ Finished the challenge for finding the ending
 Basic algorithm scripting : find the ending 
 
 
-Day 41, May 13, 2019
+Day 42, May 13, 2019
 Today's progress : challenge for finding repeat the string 
 My solution:
 function repeatStringNumTimes(str, num) {
