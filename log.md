@@ -577,3 +577,24 @@ Today's progress (May 12, 2019):
 Finished the challenge for finding the ending 
 Basic algorithm scripting : find the ending 
 
+
+Day 41, May 13, 2019
+Today's progress : challenge for finding repeat the string 
+My solution:
+function repeatStringNumTimes(str, num) {
+  // repeat after me
+  
+  for(var i = 0; i < str.length; i++){
+    if(num <= 0){
+      return "";
+    } else if (num === 1) {
+      return str;
+    } else if (num > 1){
+      return str + repeatStringNumTimes(str, num-1);
+    }
+  }
+   
+}
+
+repeatStringNumTimes("abc", 3);
+Link to solution work: https://repl.it/@meeramenon07/SardonicLateLines
