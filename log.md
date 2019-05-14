@@ -603,7 +603,7 @@ Link to solution work: https://repl.it/@meeramenon07/SardonicLateLines
 
 
 
-Day 42, May 14, 2019
+Day 43, May 14, 2019
 Todays progress: challenge for truncating a string 
 The challenge with conditions:
 Basic Algorithm Scripting: Truncate a String
