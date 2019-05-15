@@ -101,6 +101,7 @@ let sample = "Whitespace is important in separating words";
 let countWhiteSpace = /\s/g;//changed the line
 let result = sample.match(countWhiteSpace);
 
+
 -Regex : Match non white space
 The shorthand for this is \S
 
@@ -647,3 +648,11 @@ truncateString("A-tisket a-tasket A green and yellow basket", 8);
 
 My link to repl.it :
 https://repl.it/@meeramenon07/truncate-string
+
+
+
+Day 44 May 15, 2019
+Todays progress - passed a challenge and practising more 
+Finders Keepers challenge
+solution link 
+https://repl.it/@meeramenon07/IgnorantMundaneOpenlook
