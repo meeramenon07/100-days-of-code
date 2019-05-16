@@ -656,3 +656,33 @@ Todays progress - passed a challenge and practising more
 Finders Keepers challenge
 solution link 
 https://repl.it/@meeramenon07/IgnorantMundaneOpenlook
+
+
+Day 45, May 16, 2019
+Today's progress- two challenges passed
+Topics covered- Title case a sentence and Splice and Slice arrays
+Title case a sentence:
+``````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````
+
+function titleCase(str){
+ return str.toLowerCase().split(' ').map(function(words){  
+    return words.replace(words[0], words[0].toUpperCase());
+ }).join(' ');
+
+}
+titleCase("I'm a little tea pot");
+
+
+Slice and splice- copy elements from array one to array two
+
+function frankenSplice(arr1, arr2, n){
+  let newArray = arr2.slice();
+  
+  for (let i =0; i < arr1.length; i++){
+     newArray.splice(n, o, arr1[i]);
+     n++;
+  }return newArray;
+  
+}
+frankenSplice([1,2,3],[4.5.6], 1);
+}
