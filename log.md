@@ -694,3 +694,59 @@ Slice & Splice
 Falsy Bouncer
 Where do I belong
 
+
+
+Day 47, May 19, 2019
+Today's progress : Mutation challenge
+Basic Algorithm Scripting: Mutations
+Return true if the string in the first element of the array contains all of the letters of the string in the second element of the array.
+
+For example, ["hello", "Hello"], should return true because all of the letters in the second string are present in the first, ignoring case.
+
+The arguments ["hello", "hey"] should return false because the string "hello" does not contain a "y".
+
+Lastly, ["Alien", "line"], should return true because all of the letters in "line" are present in "Alien".
+
+Remember to use Read-Search-Ask if you get stuck. Write your own code.
+
+solution-
+```
+function mutation(arr) {
+
+    return arr[1].toLowerCase().split('').every(function(letter) {
+      return arr[0].toLowerCase().indexOf(letter) != -1;
+    });
+
+  return arr;
+}
+```
+
+Explanation - first change the second element of the array to lower case then split it to character array, then match every letter of this array to every letter of the first element of the array after changing the second element to lower case and then matching the letters to ensure that the index of letter is not -1
+
+next challenge: chunky monkey challenge
+Basic Algorithm Scripting: Chunky Monkey
+Write a function that splits an array (first argument) into groups the length of size (second argument) and returns them as a two-dimensional array.
+
+Remember to use Read-Search-Ask if you get stuck. Write your own code.
+
+my solution
+```
+function chunkArrayInGroups(arr, size) {
+  // Break it up.
+  let result = [];
+   while ( arr.length ) {
+    result.push(arr.splice(0, size))
+  }
+
+   
+  return result;
+  
+}
+
+chunkArrayInGroups(["a", "b", "c", "d"], 2);
+
+```
+
+
+
+mutation(["hello", "hey"]);
