@@ -786,3 +786,11 @@ let dog = {
 };
 
 dog.sayLegs();
+
+
+Day 49, May 21, 2019
+Todays progress- OOP covering following topics-
+-Define a constructor function
+-Use a constructor to create an object
+-Extend constructors to receive arguments
+-verify an object;s constructor with instanceof
