@@ -794,3 +794,82 @@ Todays progress- OOP covering following topics-
 -Use a constructor to create an object
 -Extend constructors to receive arguments
 -verify an object;s constructor with instanceof
+
+
+
+Day 50, May 22, 2019
+Today's progress - Object Oriented Programming -topics:
+-Understanding own property
+Challenge solution :
+
+```
+function Bird(name) {
+  this.name = name;
+  this.numLegs = 2;
+}
+
+let canary = new Bird("Tweety");
+let ownProps = [];
+// Add your code below this line
+for (let property in canary){
+  if (canary.hasOwnProperty(property)){
+    ownProps.push(property);
+  }
+}
+console.log(ownProps);
+```
+-Prototype properties to reduce duplication:
+```
+function Dog(name) {
+  this.name = name;
+}
+
+Dog.prototype.numLegs = 4;
+
+// Add your code above this line
+let beagle = new Dog("Snoopy");
+console.log(beagle.numLegs);
+
+```
+
+-Iterate over all properties of the object:
+
+```
+function Dog(name) {
+  this.name = name;
+}
+
+Dog.prototype.numLegs = 4;
+
+let beagle = new Dog("Snoopy");
+
+let ownProps = [];
+let prototypeProps = [];
+
+// Add your code below this line 
+for(let property in beagle){
+  if(beagle.hasOwnProperty(property)){
+    ownProps.push(property);
+  } else{
+    prototypeProps.push(property);
+  }
+}
+console.log(ownProps);//prints name
+console.log(prototypeProps);// prints numLegs
+
+```
+-Understand constructor property:
+```
+function Dog(name){
+ this.name = name;
+}
+
+function joinDogFraternity(candidate){
+  if(candidate.constructor === Dpg){
+     return true;
+  } else {
+     return false;
+  }
+}
+
+```
