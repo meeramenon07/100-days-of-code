@@ -872,4 +872,36 @@ function joinDogFraternity(candidate){
   }
 }
 
+Day 51, May 23, 2019
+Todays progress- OOP prototypes continued
+```
+
+- Set the constructor property when changing the prototype:
+```
+function Dog(name) {
+  this.name = name; 
+}
+
+// Modify the code below this line
+Dog.prototype = {
+  constructor : Dog,
+  numLegs: 2, 
+  eat: function() {
+    console.log("nom nom nom"); 
+  }, 
+  describe: function() {
+    console.log("My name is " + this.name); 
+  }
+};
+```
+-Understand where a prototype comes from-
+```
+function Dog(name) {
+  this.name = name;
+}
+
+let beagle = new Dog("Snoopy");
+
+// Add your code below this line
+Dog.prototype.isPrototypeOf(beagle);
 ```
