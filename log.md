@@ -951,3 +951,44 @@ Animal.prototype = {
   }
 };
 ```
+
+day 53, May 25, 2019
+Today'sprogress: prototype :
+-inheriting prototype from a supertype:
+
+```
+function Animal() { }
+
+Animal.prototype = {
+  constructor: Animal, 
+  eat: function() {
+    console.log("nom nom nom");
+  }
+};
+
+// Add your code below this line
+
+let duck = Object.create(Animal.prototype); // Change this line
+let beagle = Object.create(Animal.prototype); // Change this line
+
+duck.eat(); // Should print "nom nom nom"
+beagle.eat(); // Should print "nom nom nom" 
+```
+
+-Set the child's prototype to an instance of the parent:
+```
+Animal.prototype = {
+  constructor: Animal,
+  eat: function() {
+    console.log("nom nom nom");
+  }
+};
+
+function Dog() { }
+
+// Add your code below this line
+Dog.prototype = Object.create(Animal.prototype);
+
+let beagle = new Dog();
+beagle.eat();  // Should print "nom nom nom"
+```
