@@ -992,3 +992,92 @@ Dog.prototype = Object.create(Animal.prototype);
 let beagle = new Dog();
 beagle.eat();  // Should print "nom nom nom"
 ```
+-Reset inherited constructor property:
+```
+function Animal() { }
+function Bird() { }
+function Dog() { }
+
+Bird.prototype = Object.create(Animal.prototype);
+Dog.prototype = Object.create(Animal.prototype);
+
+// Add your code below this line
+
+
+Dog.prototype.constructor = Dog;
+Bird.prototype.constructor = Bird;
+let duck = new Bird();
+let beagle = new Dog();
+
+```
+
+- Add methods after inheritance:
+
+```
+function Animal() { }
+Animal.prototype.eat = function() { console.log("nom nom nom"); };
+
+function Dog() { }
+
+// Add your code below this line
+Dog.prototype = Object.create(Animal.prototype);
+Dog.prototype.constructor = Dog;
+Dog.prototype.bark = function(){
+    console.log("woof");
+};
+
+
+
+
+// Add your code above this line
+
+let beagle = new Dog();
+
+beagle.eat(); // Should print "nom nom nom"
+beagle.bark(); // Should print "Woof!"
+
+-Override Inherited Methods
+```
+function Bird() { }
+
+Bird.prototype.fly = function() { return "I am flying!"; };
+
+function Penguin() { }
+Penguin.prototype = Object.create(Bird.prototype);
+Penguin.prototype.constructor = Penguin;
+
+// Add your code below this line
+Penguin.prototype.fly = function(){
+    return "Alas, this is a flightless bird."
+};
+Bird.prototype.fly = function(){
+    return "I am flying!"
+};
+
+// Add your code above this line
+
+let penguin = new Penguin();
+console.log(penguin.fly());
+```
+Examples to remember
+ChildObject.prototype = Object.create(ParentObject.prototype);
+Then the ChildObject received its own methods by chaining them onto its prototype:
+
+ChildObject.prototype.methodName = function() {...};
+It's possible to override an inherited method. It's done the same way - by adding a method to ChildObject.prototype using the same method name as the one to override.
+
+Here's an example of Bird overriding the eat() method inherited from Animal:
+
+function Animal() { }
+Animal.prototype.eat = function() {
+  return "nom nom nom";
+};
+function Bird() { }
+
+// Inherit all methods from Animal
+Bird.prototype = Object.create(Animal.prototype);
+
+// Bird.eat() overrides Animal.eat()
+Bird.prototype.eat = function() {
+  return "peck peck peck";
+};
