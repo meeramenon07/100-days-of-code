@@ -1038,6 +1038,7 @@ beagle.bark(); // Should print "Woof!"
 
 -Override Inherited Methods
 ```
+```
 function Bird() { }
 
 Bird.prototype.fly = function() { return "I am flying!"; };
@@ -1067,6 +1068,7 @@ ChildObject.prototype.methodName = function() {...};
 It's possible to override an inherited method. It's done the same way - by adding a method to ChildObject.prototype using the same method name as the one to override.
 
 Here's an example of Bird overriding the eat() method inherited from Animal:
+```
 
 function Animal() { }
 Animal.prototype.eat = function() {
@@ -1081,3 +1083,49 @@ Bird.prototype = Object.create(Animal.prototype);
 Bird.prototype.eat = function() {
   return "peck peck peck";
 };
+```
+
+Day 54, May 26, 2019
+
+Today's progress: Use Mixin to relate common behaviour between unrelated objects:
+```
+let bird = {
+  name: "Donald",
+  numLegs: 2
+};
+
+let boat = {
+  name: "Warrior",
+  type: "race-boat"
+};
+
+// Add your code below this line
+let glideMixin = function(obj){
+   obj.glide = function() {
+     console.log("Gliding, wah")
+   }
+}
+glideMixin(bird);
+glideMixin(boat);
+```
+
+- Object Oriented Programming: Use Closure to Protect Properties Within an Object from Being Modified Externally
+```
+function Bird() {
+  let weight = 15;
+    this.getWeight = function(){
+      return weight;
+    }
+  
+  
+}
+```
+-IMMEDIATELY INVOKED FUNCTION EXPRESSION (IIFE)
+```
+(function () {
+  console.log("A cozy nest is ready");
+    
+})();
+```
+Note that the function has no name and is not stored in a variable. The two parentheses () at the end of the function expression cause it to be immediately executed or invoked. This pattern is known as an immediately invoked function expression or IIFE.
+
