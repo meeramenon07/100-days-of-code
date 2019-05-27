@@ -1129,3 +1129,35 @@ function Bird() {
 ```
 Note that the function has no name and is not stored in a variable. The two parentheses () at the end of the function expression cause it to be immediately executed or invoked. This pattern is known as an immediately invoked function expression or IIFE.
 
+Day 55, May 27, 2019
+Today's progress : concluding the topic on Object Oriented Programming with the last chapter:
+-Use an IIFE to create a module
+
+```
+let isCuteMixin = function(obj) {
+  obj.isCute = function() {
+    return true;
+  };
+};
+let singMixin = function(obj) {
+  obj.sing = function() {
+    console.log("Singing to an awesome tune");
+  };
+};
+
+let funModule = (function (){
+  return {
+    isCuteMixin: function(obj){
+      obj.isCute = function() {
+        return true;
+      };
+    },
+    singMixin: function (obj){
+      obj.sing = function(){
+        console.log("Singing to an awesome tune");
+      };
+    }
+  }
+}) ();
+
+```
