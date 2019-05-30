@@ -1281,3 +1281,81 @@ var finalTabs = socialWindow
 
 alert(finalTabs.tabs);
 ```
+
+Day 57, May 30, 2011
+Today's progress: Functional programming:
+-Avoid Mutations and side effects:
+
+```
+// the global variable
+var fixedValue = 4;
+
+function incrementer () {
+  // Add your code below this line
+  
+    return fixedValue + 1;
+  
+  
+  // Add your code above this line
+}
+
+var newValue = incrementer(); // Should equal 5
+console.log(fixedValue); // Should print 4
+
+```
+-Pass Arguments to avoid external dependence in a function
+```
+// the global variable
+var fixedValue = 4;
+
+// Add your code below this line
+function incrementer (fixedValue) {  
+  
+  if (fixedValue > 0) {
+    
+     return fixedValue + 1;
+  }
+  
+  // Add your code above this line
+}
+
+var newValue = incrementer(fixedValue); // Should equal 5
+console.log(fixedValue); // Should print 4
+```
+
+-Refactor Global Variables out of Functions:
+```
+// the global variable
+var bookList = ["The Hound of the Baskervilles", "On The Electrodynamics of Moving Bodies", "Philosophiæ Naturalis Principia Mathematica", "Disquisitiones Arithmeticae"];
+
+/* This function should add a book to the list and return the list */
+// New parameters should come before the bookName one
+
+// Add your code below this line
+function add (list, bookName) {
+  
+  return [...list, bookName];
+  
+  // Add your code above this line
+}
+
+/* This function should remove a book from the list and return the list */
+// New parameters should come before the bookName one
+
+// Add your code below this line
+function remove (list, bookName) {
+  if (list.indexOf(bookName) >= 0) {
+    
+     return list.filter(names => names !== bookName);
+    
+    // Add your code above this line
+    }
+}
+
+var newBookList = add(bookList, 'A Brief History of Time');
+var newerBookList = remove(bookList, 'On The Electrodynamics of Moving Bodies');
+var newestBookList = remove(add(bookList, 'A Brief History of Time'), 'On The Electrodynamics of Moving Bodies');
+
+console.log(bookList);
+```
+Reference used for this challenge : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
