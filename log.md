@@ -1359,3 +1359,9 @@ var newestBookList = remove(add(bookList, 'A Brief History of Time'), 'On The El
 console.log(bookList);
 ```
 Reference used for this challenge : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
+
+
+Day 58- June 01, 2019
+Today's progress-
+-Use the Map method to extract data from an array
+-Implement Map on a protogype
