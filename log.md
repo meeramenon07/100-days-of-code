@@ -1960,3 +1960,6 @@ function diffArray(arr1, arr2) {
 diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]);
 ```
 ```
+...DAY 65 May 11, 2019
+Today's progress: developing a landing page as part of a side project 
+https://codepen.io/meeramenon07/full/RmJyBW
