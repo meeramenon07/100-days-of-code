@@ -1877,7 +1877,7 @@ function checkPositive(arr) {
 }
 checkPositive([1, 2, 3, -4, 5]);
 ```
-Day 64, May 10, 2019
+Day 64, June 10, 2019
 Today's progress: started with intermediate algorithm scripting:
 -Intermediate Algorithm Scripting: Sum All Numbers in a Range
 We'll pass you an array of two numbers. Return the sum of those two numbers plus the sum of all the numbers between them.
@@ -1960,12 +1960,12 @@ function diffArray(arr1, arr2) {
 diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]);
 ```
 ```
-...DAY 65 May 11, 2019
+...DAY 65 June 11, 2019
 Today's progress: developing a landing page as part of a side project 
 https://codepen.io/meeramenon07/full/RmJyBW
 
 
----Day 66, May 12, 2019
+---Day 66, June 12, 2019
 Today's progress:Challenges for intermediate algorithm scripting
 -Seek and destroy challenge
 Remove all elements from the initial array that are of the same value as these arguments
@@ -2003,3 +2003,27 @@ whatIsInAName([{ first: "Romeo", last: "Montague" }, { first: "Mercutio", last: 
 
 }
 ```
+-Day 67, June 13, 2019
+Today's progress: yet another challenging challenge:Intermediate Algorithm Scripting: Spinal Tap Case
+Convert a string to spinal case. Spinal case is all-lowercase-words-joined-by-dashes.
+
+spinalCase("This Is Spinal Tap") should return "this-is-spinal-tap".
+Passed
+spinalCase("thisIsSpinalTap") should return "this-is-spinal-tap".
+Passed
+spinalCase("The_Andy_Griffith_Show") should return "the-andy-griffith-show".
+Passed
+spinalCase("Teletubbies say Eh-oh") should return "teletubbies-say-eh-oh".
+Passed
+spinalCase("AllThe-small Things") should return "all-the-small-things".
+```
+function spinalCase(str) {
+  // "It's such a fine line between stupid, and clever."
+  // --David St. Hubbins
+  return str.split(/\s+|_+|(?=[A-Z][a-z])/).join('-').toLowerCase();
+}
+
+spinalCase('This Is Spinal Tap');
+
+```
+link to solution : [https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/intermediate-algorithm-scripting/spinal-tap-case]
