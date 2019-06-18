@@ -2085,7 +2085,6 @@ Third argument is what you will be replacing the second argument with (after).
 Note
 Preserve the case of the first character in the original word when you are replacing it. For example if you mean to replace the word "Book" with the word "dog", it should be replaced as "Dog"
 
-```
 function myReplace(str, before, after) {
    var index = str.indexOf(before);
    if(str[index] === str[index].toUpperCase()){
@@ -2096,4 +2095,51 @@ function myReplace(str, before, after) {
 }
 
 myReplace("A quick brown fox jumped over the lazy dog", "jumped", "leaped");
-```
+
+
+...Day 70, June 18, 2019
+Today's progress: solved two intermediate algorithms
+-Challenge : DNA Pairing
+Solution:
+
+function pairElement(str){
+
+  var paired = [];
+  var search = function(char){
+     switch(char){
+        case 'A' :
+        paired.push(['A', 'T']);
+        break;
+        case 'T' :
+        paired.push(['T', 'A']);
+        break;
+        case 'C' :
+        paired.push(['C', 'G']);
+        break;
+        case 'G' :
+        paired.push(['G', 'C']);
+        break;
+     }
+  }
+  for (var i = 0; i < str.length; i++){
+     search (str[i]);
+  }
+  return paired;
+}
+pairElement("GCG");
+
+
+- Challenge : Find Missing Letters:
+
+Find the missing letters in the given passed range and if all the letters are present in a given range, then, return undefined.
+My solution: 
+
+function fearNotLetter(str){
+      var startCode = str.charCodeAt(0);
+      for(var i = 0; i < str.length; i++){
+          if (str.charCodeAt(i) !== startCode){
+             return String.fromCharCode(startCode);
+          }else startCode++;
+      }
+}
+fearNotLetter("abc");
