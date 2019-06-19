@@ -2143,3 +2143,35 @@ function fearNotLetter(str){
       }
 }
 fearNotLetter("abc");
+
+
+...Day 71, June 19, 2019
+Today's progress: Intermediate Algorithm Scripting: Sorted Union
+Write a function that takes two or more arrays and returns a new array of unique values in the order of the original provided arrays.
+
+In other words, all values present from all arrays should be included in their original order, but with no duplicates in the final array.
+
+The unique numbers should be sorted by their original order, but the final array should not be sorted in numerical order.
+
+Check the assertion tests for examples
+```
+function uniteUnique(arr) {
+
+  var finalArr = [];
+  for(var i = 0; i < arguments.length; i++){
+    var arrayArguments = arguments[i];
+  for(var j = 0; j < arrayArguments.length; j++){
+    var indexValue = arrayArguments[j];
+
+    if(finalArr.indexOf(indexValue) === -1){
+      finalArr.push(indexValue);
+    }
+  }
+  }
+  return finalArr;
+}
+
+uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]);
+```
+
+
