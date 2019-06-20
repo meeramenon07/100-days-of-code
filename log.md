@@ -2172,6 +2172,42 @@ function uniteUnique(arr) {
 }
 
 uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]);
-```
 
+...Day 72, June 20, 2019
+Today's progress; intermediate js algorithm scripting challenge solving
+Convert characters &, >, <, ", ', in a string to their corresponding html entities.
+The solution
+```
+function convertHTML(str){
+ var convert = str.split('');
+ for (var i = 0; i < str.length; i++){
+   switch(convert[i]){
+    case'&' : 
+     convert[i] = '&amp;';
+     break;
+    case '<' :
+     convert[i] = '&lt;';
+     break;
+    case '>' :
+     convert[i] - '&gt;';
+     break;
+    case '"' :
+     convert[i] = '&quot;';
+     break;
+    case "'" :
+    convert[i] = '&apos;';
+    break;
+   case '<>' :
+    convert[i] = '&lt;&gt;';
+    break;
+  }
+ }
+  return convert.join('');
+}
+convertHTML("Dolce & Gabbana");// logs => 'Dolce &amp; Gabbana'
+
+   }
+   
+ }
+}
 
