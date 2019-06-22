@@ -2211,3 +2211,22 @@ convertHTML("Dolce & Gabbana");// logs => 'Dolce &amp; Gabbana'
  }
 }
 
+Day 73 June 22, 2019
+Today's progress..continuing with algorithm challenges 
+Challenge: Given a positive number, return the sum of all Fibonacci numbers that are less than or equal to num. 
+
+function sumFibs(num){
+ var prevNum = 0;
+ var currNum = 1;
+ var result = 0;
+ while(currNum <= num){
+   if(currNum % 2 !== 0 ){
+    result += currNum;
+   }
+   currNum += prevNum;
+   prevNum = currNum - prevNum;
+ }
+ return result;
+}
+sum Fibs(4);
+```
