@@ -2230,3 +2230,34 @@ function sumFibs(num){
 }
 sum Fibs(4);
 ```
+Day 74 June 23/6/19
+Today's progress: Sum All Primes challenge
+Task:Sum all the prime numbers up to and including the provided number.
+
+A prime number is defined as a number greater than one and having only two divisors, one and itself. For example, 2 is a prime number because it's only divisible by one and two.
+
+The provided number may not be a prime.
+
+Solution
+```
+function sumPrimes(num) {
+  var sum = 0;
+  function chkPrime(i){
+    for (var j = 2; j < i; j++){
+       if(i % j === 0){
+         return false;
+       }
+    }
+    return true;
+  }
+  for(var i = 2; i <= num; i++){
+     if(chkPrime(i)){
+      sum += i;
+   }
+  }
+  return sum;
+}
+
+sumPrimes(10);
+If the number is divisible by anything other than itself for example in this case j, then it is not a prime number or else it is prime and if the prime check number is confirmed then return iteration is sum+= i 
+
