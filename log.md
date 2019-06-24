@@ -2261,3 +2261,55 @@ function sumPrimes(num) {
 sumPrimes(10);
 If the number is divisible by anything other than itself for example in this case j, then it is not a prime number or else it is prime and if the prime check number is confirmed then return iteration is sum+= i 
 
+
+```
+Day 75 June 24, 2019
+Today's progress: continuing with intermediate algorithm scripting
+Find the smallest common multiple of the provided parameters that can be evenly divided by both, as well as by all sequential numbers in the range between these parameters.
+
+The range will be an array of two numbers that will not necessarily be in numerical order.
+
+For example, if given 1 and 3, find the smallest common multiple of both 1 and 3 that is also evenly divisible by all numbers between 1 and 3. The answer here would be 6.
+
+smallestCommons([1, 5]) should return a number.
+Passed
+smallestCommons([1, 5]) should return 60.
+Passed
+smallestCommons([5, 1]) should return 60.
+Passed
+smallestCommons([2, 10]) should return 2520.
+Passed
+smallestCommons([1, 13]) should return 360360.
+Passed
+smallestCommons([23, 18]) should return 6056820.
+1
+```
+function smallestCommons(arr) {
+  arr.sort(function(a,b){
+    return b-a;
+  });
+  var resultArr = [];
+  for(var i = arr[0]; i >= arr[1]; i--){
+    resultArr.push(i);
+  }
+  var quotient = 0;
+  var loop = 1;
+  var n;
+  do{
+    quotient = resultArr[0] * resultArr[1] * loop;
+    for(n = 2; n < resultArr.length; n++){
+      if(quotient % resultArr[n] !== 0){
+        break;
+      }
+    }
+    loop++;
+  }while (n !== resultArr.length);
+    return quotient;
+  
+  
+
+  
+}
+
+
+smallestCommons([1,5]);
