@@ -2313,3 +2313,93 @@ function smallestCommons(arr) {
 
 
 smallestCommons([1,5]);
+```
+
+Day 76, June 26, 2019
+Today's progress : Intermediate algorithm scripting lessons
+Intermediate Algorithm Scripting: Drop it
+Given the array arr, iterate through and remove each element starting from the first element (the 0 index) until the function func returns true when the iterated element is passed through it.
+
+Then return the rest of the array once the condition is satisfied, otherwise, arr should be returned as an empty array.
+
+dropElements([1, 2, 3, 4], function(n) {return n >= 3;}) should return [3, 4].
+Passed
+dropElements([0, 1, 0, 1], function(n) {return n === 1;}) should return [1, 0, 1].
+Passed
+dropElements([1, 2, 3], function(n) {return n > 0;}) should return [1, 2, 3].
+Passed
+dropElements([1, 2, 3, 4], function(n) {return n > 5;}) should return [].
+Passed
+dropElements([1, 2, 3, 7, 4], function(n) {return n > 3;}) should return [7, 4].
+Passed
+dropElements([1, 2, 3, 9, 2], function(n) {return n > 2;}) should return [3, 9, 2].
+```
+
+function dropElements(arr, func) {
+  // Drop them elements.
+   while(!func(arr[0])){
+      arr.shift();
+   }
+  return arr;
+}
+dropElements([1, 2, 3], function(n) {return n < 3; });
+
+```
+for my reference this explanation that I got from Richard Middleton's article in Mediumm is a great one to understand for later remembrance of this solution:
+Starting Code
+function dropElements(arr, func) {
+ // Drop them elements.
+ return arr;
+}
+dropElements([1, 2, 3], function(n) {return n < 3; });
+What It Means
+Similar to the problem before it (Finders Keepers — solution), this challenge takes a function as an argument that has to return true.
+
+You have two arguments passed in with the function call.
+
+dropElements([1, 2, 3], function(n) {return n < 3; });
+The first is an array: [1, 2, 3]
+
+The second is a function: [function(n){return n < 3;}
+
+What you need to do is remove items in the array (arr) until the second argument returns true, then return the rest of the array.
+
+The second argument returns a true or false when it runs.
+
+Logic
+So let’s take a look at this.
+
+First, while our func is not true, or in other words isfalse we need to do something.
+
+
+While func returns not true at the arrays 0 position.
+Then, we need to remove the array item at the 0 position. We will do this with the shift command which takes the first element in an array and removes it.
+
+
+So for example if we pass in the first item arr[0] (the number 1) and it returns false, we need to remove arr[0] from our array, shortening our array.
+
+The Truth
+When finally our func returns true, the loop will break. So in our test case.
+
+our arr[1, 2, 3]
+
+our (simplified)func {return n < 3;}
+
+So our result should be [1, 2, 3] because 1 < 3 therefore for our while loop is broken and arr is returned.
+
+If we took another test case.
+
+dropElements([1, 2, 3, 4], function(n) {return n >= 3;});
+Our result would be [3, 4] because 1 is not >= 3, 2 also is not but 3 is >= 3 and so is 4.
+
+I also see that the alternate solution as follows also passes the test :
+```
+
+function dropElements(arr, func) {
+  // Drop them elements.
+   while(!func(arr[0]) && arr.length > 0){
+      arr.shift();
+   }
+  return arr;
+}
+dropElements([1, 2, 3], function(n) {return n < 3; });
