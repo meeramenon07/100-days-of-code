@@ -2403,3 +2403,39 @@ function dropElements(arr, func) {
   return arr;
 }
 dropElements([1, 2, 3], function(n) {return n < 3; });
+
+```
+
+Day 77 June 27, 2019
+Today's progress: Intermediate algorithm scripting practising challenge Steamroller challenge:
+Flatten a nested array. You must account for varying levels of nesting.
+steamrollArray([[["a"]], [["b"]]]) should return ["a", "b"].
+Passed
+steamrollArray([1, [2], [3, [[4]]]]) should return [1, 2, 3, 4].
+Passed
+steamrollArray([1, [], [3, [[4]]]]) should return [1, 3, 4].
+Passed
+steamrollArray([1, {}, [3, [[4]]]]) should return [1, {}, 3, 4].
+
+
+
+
+```
+function steamrollArray(arr) {
+  // I'm a steamroller, baby
+  var resultArray = [];
+  function flatten(arr){
+    arr.forEach(function(item){
+      if(!Array.isArray(item)){
+        resultArray.push(item);
+      }else{
+        flatten(item);
+      }
+    });
+  }
+  flatten(arr);
+   return resultArray;
+
+}
+
+steamrollArray([1, [2], [3, [[4]]]]);
