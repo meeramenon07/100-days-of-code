@@ -2463,4 +2463,58 @@ return String.fromCharCode(...str.split(' ').map(function(char){
 }
 
 binaryAgent("01000001 01110010 01100101 01101110 00100111 01110100 00100000 01100010 01101111 01101110 01100110 01101001 01110010 01100101 01110011 00100000 01100110 01110101 01101110 00100001 00111111");
+```
+
+Day 79, June 30, 2019
+Today's progress: Continuing with intermediate algorithm scripting
+Intermediate Algorithm Scripting: Everything Be True
+Check if the predicate (second argument) is truthy on all elements of a collection (first argument).
+
+In other words, you are given an array collection of objects. The predicate pre will be an object property and you need to return true if its value is truthy. Otherwise, return false.
+
+In JavaScript, truthy values are values that translate to true when evaluated in a Boolean context.
+
+Remember, you can access object properties through either dot notation or [] notation.
+
+truthCheck([{"user": "Tinky-Winky", "sex": "male"}, {"user": "Dipsy", "sex": "male"}, {"user": "Laa-Laa", "sex": "female"}, {"user": "Po", "sex": "female"}], "sex") should return true.
+Passed
+truthCheck([{"user": "Tinky-Winky", "sex": "male"}, {"user": "Dipsy"}, {"user": "Laa-Laa", "sex": "female"}, {"user": "Po", "sex": "female"}], "sex") should return false.
+Passed
+truthCheck([{"user": "Tinky-Winky", "sex": "male", "age": 0}, {"user": "Dipsy", "sex": "male", "age": 3}, {"user": "Laa-Laa", "sex": "female", "age": 5}, {"user": "Po", "sex": "female", "age": 4}], "age") should return false.
+Passed
+truthCheck([{"name": "Pete", "onBoat": true}, {"name": "Repeat", "onBoat": true}, {"name": "FastFoward", "onBoat": null}], "onBoat") should return false
+Passed
+truthCheck([{"name": "Pete", "onBoat": true}, {"name": "Repeat", "onBoat": true, "alias": "Repete"}, {"name": "FastFoward", "onBoat": true}], "onBoat") should return true
+Passed
+truthCheck([{"single": "yes"}], "single") should return true
+Passed
+truthCheck([{"single": ""}, {"single": "double"}], "single") should return false
+Passed
+truthCheck([{"single": "double"}, {"single": undefined}], "single") should return false
+Passed
+truthCheck([{"single": "double"}, {"single": NaN}], "single") should return false
+1
+
+```
+
+function truthCheck(collection, pre) {
+  // Is everyone being true?
+  var array = [];
+  for(var i = 0; i < collection.length; i++){
+    if(!collection[i][pre]){
+      array.push(collection[i]);
+      
+
+    }
+  }
+  if (array.length === 0){
+    return true;
+  }
+  else{
+    return false;
+  }
+  
+}
+
+truthCheck([{"user": "Tinky-Winky", "sex": "male"}, {"user": "Dipsy", "sex": "male"}, {"user": "Laa-Laa", "sex": "female"}, {"user": "Po", "sex": "female"}], "sex");
 
