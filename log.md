@@ -2517,4 +2517,38 @@ function truthCheck(collection, pre) {
 }
 
 truthCheck([{"user": "Tinky-Winky", "sex": "male"}, {"user": "Dipsy", "sex": "male"}, {"user": "Laa-Laa", "sex": "female"}, {"user": "Po", "sex": "female"}], "sex");
+```
+Day 80 July 2, 2019
+Today's progress- Continuing with the intermediate algorithm scripting 
+Intermediate Algorithm Scripting: Arguments Optional
+Create a function that sums two arguments together. If only one argument is provided, then return a function that expects one argument and returns the sum.
 
+For example, addTogether(2, 3) should return 5, and addTogether(2) should return a function.
+
+Calling this returned function with a single argument will then return the sum:
+
+var sumTwoAnd = addTogether(2);
+
+sumTwoAnd(3) returns 5.
+
+If either argument isn't a valid number, return undefined.
+
+addTogether(2, 3) should return 5.
+Passed
+addTogether(2)(3) should return 5.
+Passed
+addTogether("http://bit.ly/IqT6zt") should return undefined.
+Passed
+addTogether(2, "3") should return undefined.
+Passed
+addTogether(2)([3]) should return undefined.
+```
+
+function addTogether() {
+  const args = [...arguments];
+   return args.some(arg => typeof arg !== "number")? undefined : args.length > 1?
+    args.reduce((a,b) => a+b, 0) : arg => typeof arg !== "number" ? undefined : arg + args[0];
+  
+}
+
+addTogether(2,3);
