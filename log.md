@@ -2552,3 +2552,74 @@ function addTogether() {
 }
 
 addTogether(2,3);
+```
+
+Day 81, July 4, 2019(skipped on July 3)
+Today's progress: Intermediate javascript lesson
+Intermediate Algorithm Scripting: Make a Person
+Fill in the object constructor with the following methods below:
+
+getFirstName() getLastName() getFullName() setFirstName(first) setLastName(last) setFullName(firstAndLast)
+Run the tests to see the expected output for each method.
+
+The methods that take an argument must accept only one argument and it has to be a string.
+
+These methods must be the only available means of interacting with the object.
+
+Object.keys(bob).length should return 6.
+Passed
+bob instanceof Person should return true.
+Passed
+bob.firstName should return undefined.
+Passed
+bob.lastName should return undefined.
+Passed
+bob.getFirstName() should return "Bob".
+Passed
+bob.getLastName() should return "Ross".
+Passed
+bob.getFullName() should return "Bob Ross".
+Passed
+bob.getFullName() should return "Haskell Ross" after bob.setFirstName("Haskell").
+Passed
+bob.getFullName() should return "Haskell Curry" after bob.setLastName("Curry").
+Passed
+bob.getFullName() should return "Haskell Curry" after bob.setFullName("Haskell Curry").
+Passed
+bob.getFirstName() should return "Haskell" after bob.setFullName("Haskell Curry").
+Passed
+bob.getLastName() should return "Curry" after bob.setFullName("Haskell Curry").
+```
+Solution:
+var Person = function(firstAndLast) {
+  var firstName = firstAndLast.split(" ")[0];
+  var lastName = firstAndLast.split(" ")[1];
+
+  this.getLastName = function(){
+    return lastName;
+  };
+
+  this.getFirstName = function(){
+    return firstName;
+  };
+  // Complete the method below and implement the others similarly
+  this.getFullName = function() {
+    return firstName + " " + lastName;
+  };
+  this.setFirstName = function(name){
+    firstName = name;
+  };
+
+  this.setLastName = function(name){
+    lastName = name;
+  };
+
+  this.setFullName = function(name){
+     firstName = name.split(" ")[0];
+     lastName = name.split(" ")[1];
+  };
+  
+};
+
+var bob = new Person('Bob Ross');
+bob.getFullName();
