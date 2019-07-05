@@ -2623,3 +2623,6 @@ var Person = function(firstAndLast) {
 
 var bob = new Person('Bob Ross');
 bob.getFullName();
+
+Day 82 practise time
+https://codepen.io/meeramenon07/full/GbBrgb
