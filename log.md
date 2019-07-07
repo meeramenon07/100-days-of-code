@@ -2626,3 +2626,45 @@ bob.getFullName();
 
 Day 82 practise time
 https://codepen.io/meeramenon07/full/GbBrgb
+
+
+```
+Day 83 July 7, 2019
+Today's progress: javascript intermediate algorithm scripting lesson-The final challenge in this chapter
+Intermediate Algorithm Scripting: Map the Debris
+Return a new array that transforms the elements' average altitude into their orbital periods (in seconds).
+
+The array will contain objects in the format {name: 'name', avgAlt: avgAlt}.
+
+You can read about orbital periods on Wikipedia.
+
+The values should be rounded to the nearest whole number. The body being orbited is Earth.
+
+The radius of the earth is 6367.4447 kilometers, and the GM value of earth is 398600.4418 km3s-2.
+
+orbitalPeriod([{name : "sputnik", avgAlt : 35873.5553}]) should return [{name: "sputnik", orbitalPeriod: 86400}].
+Passed
+orbitalPeriod([{name: "iss", avgAlt: 413.6}, {name: "hubble", avgAlt: 556.7}, {name: "moon", avgAlt: 378632.553}]) should return [{name : "iss", orbitalPeriod: 5557}, {name: "hubble", orbitalPeriod: 5734}, {name: "moon", orbitalPeriod: 2377399}].
+
+```
+function orbitalPeriod(arr) {
+  var GM = 398600.4418;
+  var earthRadius = 6367.4447;
+  var resultArr = [];
+  var a = 2 * Math.PI;
+  var getOrbPeriod = function(object){
+    var c = Math.pow(earthRadius + object.avgAlt, 3);
+    var b = Math.sqrt(c/GM);
+    var orbPeriod = Math.round(a*b);
+    delete object.avgAlt;
+    object.orbitalPeriod = orbPeriod;
+    return object;
+
+  };
+  for(var element in arr){
+    resultArr.push(getOrbPeriod(arr[element]));
+  }
+  return resultArr;
+}
+
+orbitalPeriod([{name : "sputnik", avgAlt : 35873.5553}]);
