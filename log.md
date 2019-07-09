@@ -2730,3 +2730,53 @@ function palindrome(str) {
 
 
 palindrome("eye");
+
+
+```
+
+Day 85- Today's progress : Algorithms and data structures
+JavaScript Algorithms and Data Structures Projects: Roman Numeral Converter
+Convert the given number into a roman numeral.
+
+All roman numerals answers should be provided in upper-case.
+
+convertToRoman(2) should return "II".
+Passed
+convertToRoman(3) should return "III".
+Passed
+convertToRoman(4) should return "IV".
+Passed
+convertToRoman(5) should return "V".
+Passed
+convertToRoman(9) should return "IX".
+Passed
+convertToRoman(12) should return "XII".
+Passed
+convertToRoman(16) should return "XVI".
+Passed
+convertToRoman(29) should return "XXIX".
+Passed
+convertToRoman(44) should return "XLIV".
+Passed
+rest all passed
+```
+function convertToRoman(num) {
+    var result = '';
+    var decimal = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1];
+    var roman = ["M", "CM","D","CD","C", "XC", "L", "XL", "X","IX","V","IV","I"];
+
+    // looping over every element of this array
+    for(var i = 0; i < decimal.length; i++){
+        //keep trying the  same number until it wont fit anymore
+        while ( num % decimal[i] < num){
+           //add matching roman number to the result string
+            result += roman[i];
+            //remove the decimal value of the roman number from num
+            num -= decimal[i];
+        }
+    }
+
+ return result;
+}
+
+convertToRoman(36);
