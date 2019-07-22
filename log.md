@@ -35,6 +35,7 @@ Regular Expressions:
 https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/regular-expressions/find-more-than-the-first-match
 https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/regular-expressions/match-anything-with-wildcard-period
 https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/regular-expressions/match-single-character-with-multiple-possibilities
+
 https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/regular-expressions/match-single-character-with-multiple-possibilities
 https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/regular-expressions/match-numbers-and-letters-of-the-alphabet
 https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/regular-expressions/match-letters-of-the-alphabet
@@ -3016,7 +3017,7 @@ function checkCashRegister(price, cash, cid) {
 // ["ONE", 90],
 // ["FIVE", 55],
 // ["TEN", 20],
-// ["TWENTY", 60],
+// ["TWENTY", 60], 
 // ["ONE HUNDRED", 100]]
 
 checkCashRegister(19.5, 20, [["PENNY", 1.01], ["NICKEL", 2.05], ["DIME", 3.1], ["QUARTER", 4.25], ["ONE", 90], ["FIVE", 55], ["TEN", 20], ["TWENTY", 60], ["ONE HUNDRED", 100]]);
@@ -3025,3 +3026,91 @@ checkCashRegister(19.5, 20, [["PENNY", 1.01], ["NICKEL", 2.05], ["DIME", 3.1], [
 Day 89, July 20, 2019
 Today's progress. I turned the catApp lesson into a project by building it on codepen
 https://codepen.io/meeramenon07/full/pMJJqO
+
+Day 90, July 22, 2019
+Today;s progress: Completed the cat App coding lessons  today using bootstrap library
+HTML :
+```
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-8">
+      <h2 class="text-primary text-center">CatPhotoApp</h2>
+    </div>
+    <div class="col-xs-4">
+      <a href="#"><img class="img-responsive thick-green-border" src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back."></a>
+    </div>
+  </div>
+  <img src="https://bit.ly/fcc-running-cats" class="img-responsive" alt="Three kittens running towards the camera.">
+  <div class="row">
+    <div class="col-xs-4">
+      <button class="btn btn-block btn-primary"><i class="fa fa-thumbs-up"></i> Like</button>
+    </div>
+    <div class="col-xs-4">
+      <button class="btn btn-block btn-info"><i class="fa fa-info-circle"></i> Info</button>
+    </div>
+    <div class="col-xs-4">
+      <button class="btn btn-block btn-danger"><i class="fa fa-trash"></i> Delete</button>
+    </div>
+  </div>
+  <p>Things cats <span class="text-danger">love:</span></p>
+  <ul>
+    <li>cat nip</li>
+    <li>laser pointers</li>
+    <li>lasagna</li>
+  </ul>
+  <p>Top 3 things cats hate:</p>
+  <ol>
+    <li>flea treatment</li>
+    <li>thunder</li>
+    <li>other cats</li>
+  </ol>
+  <form action="/submit-cat-photo">
+    <div class="row">
+      <div class="col-xs-6">
+        <label><input type="radio" name="indoor-outdoor"> Indoor</label>
+      </div>
+      <div class="col-xs-6">
+        <label><input type="radio" name="indoor-outdoor"> Outdoor</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-4">
+        <label><input type="checkbox" name="personality"> Loving</label>
+      </div>
+      <div class="col-xs-4">
+        <label><input type="checkbox" name="personality"> Lazy</label>
+      </div>
+      <div class="col-xs-4">
+        <label><input type="checkbox" name="personality"> Crazy</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-7">
+    <input type="text" class="form-control" placeholder="cat photo URL" required>
+      </div>
+      <div class="col-xs-5">
+    <button type="submit" class="btn btn-primary"><i class="fa fa-paper-plane"></i> Submit</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+The css:
+<style>
+  h2 {
+    font-family: Lobster, Monospace;
+  }
+
+  .thick-green-border {
+    border-color: green;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 50%;
+  }
+</style>
+```
+link to project on codepen:
+[https://codepen.io/meeramenon07/pen/pMJJqO]
