@@ -3141,3 +3141,69 @@ Today's progress:jQuery playground
     </div>
   </div>
 </div>
+```
+Day 92-97
+I thought of completing the entire module on jQuery before posting on the challenge board, I hope, I am allowed to do that
+Progress for the last six days : Finished the animation part of the jQuery lessons
+Here is the output of my work on codepen
+```
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrap.com/bootstrap/3.3.7/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+</head>
+
+My html file on codepen
+<body>
+ <div class="container-fluid">
+  <h3 class="text-primary text-center">jQuery Playground</h3>
+  <div class="row">
+    <div class="col-xs-6">
+      <h4>#left-well</h4>
+      <div class="well" id="left-well">
+        <button class="btn btn-default target" id="target1">#target1</button>
+        <button class="btn btn-default target" id="target2">#target2</button>
+        <button class="btn btn-default target" id="target3">#target3</button>
+      </div>pen 
+    </div>
+    <div class="col-xs-6">
+      <h4>#right-well</h4>
+      <div class="well" id="right-well">
+        <button class="btn btn-default target" id="target4">#target4</button>
+        <button class="btn btn-default target" id="target5">#target5</button>
+        <button class="btn btn-default target" id="target6">#target6</button>
+      </div>
+    </div>
+  </div>
+ </div>
+</body>
+
+This is the js part of my codepen file
+$(document).ready(function() {
+    $("button").addClass("animated");
+    $(".btn").addClass("shake");
+    $("#target1").addClass("btn-primary");
+    $("#target1").css("color", "red");
+    $("#target1").prop("disabled", true);
+    $("#target4").remove();
+    $("#target2").appendTo("#right-well");
+    $("#target5").clone().appendTo("#left-well");
+    $("#target1").parent().css("background-color", "red");
+    $("#right-well").children().css("color", "orange");
+    $(".target:nth-child(2)").addClass("animated bounce");
+    $(".target:even").addClass("animated shake");
+    $("body").addClass("animated hinge");
+    
+   
+   
+   
+
+  });
+
+
+```
+
+Here is my pen for the above output:
+
+https://codepen.io/meeramenon07/full/QeKBWw
