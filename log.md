@@ -3206,4 +3206,10 @@ $(document).ready(function() {
 
 Here is my pen for the above output:
 
-https://codepen.io/meeramenon07/full/QeKBWw
+[https://codepen.io/meeramenon07/full/QeKBWw]
+
+
+Day 98, July 30, 2019
+Today's progress: I put my jQuery to practice in this pen: [https://codepen.io/meeramenon07/full/eqzGjg]
+
+
