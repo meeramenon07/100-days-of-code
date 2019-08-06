@@ -3180,7 +3180,7 @@ My html file on codepen
 </body>
 
 This is the js part of my codepen file
-$(document).ready(function() {
+$(docu ment).ready(function() {
     $("button").addClass("animated");
     $(".btn").addClass("shake");
     $("#target1").addClass("btn-primary");
@@ -3212,4 +3212,38 @@ Here is my pen for the above output:
 Day 98, July 30, 2019
 Today's progress: I put my jQuery to practice in this pen: [https://codepen.io/meeramenon07/full/eqzGjg]
 
+
+Day 99 - Day 104 Today is August 6, 2019
+Today's progress: Finished doing the lessons from SASS 
+Completed the topics as follows:
+Introduction to the Sass Challenges
+PassedStore Data with Sass Variables
+PassedNest CSS with Sass
+PassedCreate Reusable CSS with Mixins
+PassedUse @if and @else to Add Logic To Your Styles
+PassedUse @for to Create a Sass Loop
+PassedUse @each to Map Over Items in a List
+PassedApply a Style Until a Condition is Met with @while
+PassedSplit Your Styles into Smaller Chunks with Partials
+PassedExtend One Set of CSS Styles to Another Element
+
+Following are the links from my codepen for doing the above lessons in practical
+
+[https://codepen.io/meeramenon07/pen/zgzVNX
+
+[https://codepen.io/meeramenon07/pen/NQagmy
+
+[https://codepen.io/meeramenon07/pen/Ymrxma
+
+[https://codepen.io/meeramenon07/pen/aeLLJL
+
+[https://codepen.io/meeramenon07/pen/KOXQXz
+
+[https://codepen.io/meeramenon07/pen/zgEbQX
+
+[https://codepen.io/meeramenon07/pen/ymPzNB
+
+[https://codepen.io/meeramenon07/pen/LweQOL
+
+[https://codepen.io/meeramenon07/pen/VoyQOd
 
