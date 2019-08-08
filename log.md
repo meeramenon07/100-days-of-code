@@ -3247,3 +3247,35 @@ Following are the links from my codepen for doing the above lessons in practical
 
 [https://codepen.io/meeramenon07/pen/VoyQOd
 
+Day 105 August 8, 2019
+Today's progress: started JSX
+
+Completed following topics:
+
+Create a simple JSX element
+
+[https://codepen.io/meeramenon07/pen/bXLOLW
+
+
+Create a complex JSX element:
+link of the work:
+[https://codepen.io/meeramenon07/pen/jgzveG
+
+code: 
+<div id='root'></div>
+const JSX = (
+    <div>
+      <h1>List of Things</h1>
+        <p>Here is the following list</p>
+           <ul>
+              <li>Item One</li>
+              <li>Item Two</li>
+              <li>Item Three</li>
+              
+              
+           
+           </ul>
+    </div>
+);
+ReactDOM.render(JSX, 
+document.getElementById('root'));
