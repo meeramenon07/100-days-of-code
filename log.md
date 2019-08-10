@@ -3279,3 +3279,15 @@ const JSX = (
 );
 ReactDOM.render(JSX, 
 document.getElementById('root'));
+
+Day 106, August 10, 2019
+Today's progress: continuinng with jsx:
+-Add comments in jsx
+Link to the work:
+[https://codepen.io/meeramenon07/pen/VoEKXM
+
+-Render html elements to the DOM
+[https://codepen.io/meeramenon07/pen/PMyGxy
+
+-Define an html class in jsx
+[https://codepen.io/meeramenon07/pen/aeRmgW
